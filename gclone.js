@@ -38,3 +38,5 @@ fs.watch(`${dir}`, (eventType, filename) => {
 	});
 	clipboardy.writeSync(url); //writes URL to the clipboard for easy pasting. 
 });
+
+//nothing to see here. keep on moving
