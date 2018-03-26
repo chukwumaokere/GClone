@@ -14,4 +14,6 @@ It will output data to console. So use pm2 monit, or just check your command lin
 ## TODO: 
 Find a more secure way to SCP/FTP upload the image
 Find a way to create .exe for windows systems
-Turn into package with dependencies
+Turn into package with dependencies for better UX
+Find alternative to SSHPass for windows computers, or find a way to add SSH pass to windows PC
+Turn into .exe for windows? not necessary but can be done.
