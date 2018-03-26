@@ -20,7 +20,7 @@ fs.watch(`${dir}`, (eventType, filename) => {
 	var url = urlbase + filenamebase;
 	//console.log(path); //uncomment for debugging
 	//TODO: try to find a more secure method for uploading images
-	if (port && port !== NULL && port != ''){
+	if (port && port !== undefined && port != ''){
 		var command = `sshpass -p '${sshpw}' scp -r -P ${port} ${path} ${sshuser}@${hostname}:${sspath}`;
 	}else{
 		var command = `sshpass -p '${sshpw}' scp -r ${path} ${sshuser}@${hostname}:${sspath}`;
