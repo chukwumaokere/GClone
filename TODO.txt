@@ -1,3 +1,0 @@
-Find a more secure way to SCP/FTP upload the image
-Find a way to create .exe for windows systems
-Turn into package with dependencies
