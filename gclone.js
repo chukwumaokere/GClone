@@ -71,7 +71,7 @@ fs.watch(`${dir}`, (eventType, filename) => {
 		clipboardy.writeSync(errmsg);
 	}
 
-	//Wrote tp ;pg file
+	//Write to log file
 	fs.writeFile('./log.txt', `${d}: ${errmsg} Program threw code ${code}. Tried to run command: ${command}. Output was ${stdop}. Error was ${stder}.`, function(err){
 		if (err){
 			console.log('Could not write to file, check permissions');
