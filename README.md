@@ -17,3 +17,6 @@ Find a way to create .exe for windows systems
 Turn into package with dependencies for better UX
 Find alternative to SSHPass for windows computers, or find a way to add SSH pass to windows PC
 Turn into .exe for windows? not necessary but can be done.
+Apparently ssh key needs to be accepted before hand on the local server before successfully sending images. Need a workaround for this. Need to come up with solution for Windows OS. Only partially works with Cygwin
+
+## If you want to use the upload function without the clipboardy part, comment out the clipboardy code. This is a soltuion for UNIX systems that do not use desktop interface, and instead you are using it to upload images to a remote server via FTP. (If you're the type of person to do something like that. I'm not judging. I'm that kinda person too.) 
