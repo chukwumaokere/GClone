@@ -1,0 +1,30 @@
+{
+  "name": "gyazoclone",
+  "version": "1.0.0",
+  "description": "A Gyazo Clone to upload screenshots to your own remote server/web accessible site",
+  "main": "gclone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chukwumaokere/GClone.git"
+  },
+  "keywords": [
+    "gyazo",
+    "clone",
+    "gyazoclone",
+    "remote",
+    "screenshots"
+  ],
+  "author": "cokere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chukwumaokere/GClone/issues"
+  },
+  "homepage": "https://github.com/chukwumaokere/GClone#readme",
+  "dependencies": {
+    "clipboardy": "^1.2.3",
+    "sftp-upload": "^1.0.0"
+  }
+}
