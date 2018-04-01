@@ -32,7 +32,7 @@ var SftpUpload = require('sftp-upload'),
     sftp = new SftpUpload(options);
 
 //Execute on file added to 
- fs.watch(`${dir}`, (eventType, filename) => { //Need to ignore Thumb.db and only upload as many files as are new.
+ fs.watch(`${dir}`, (eventType, filename) => { //Need to ignore Thumb.db and only upload as many files as are new. And ignore files that already exist. Need to upload files, not a whole directory.
 	var filenamebase = filename;
     filename = filename.replace(/ /g, '\\ ');
 	var url = urlbase + filenamebase;
@@ -40,7 +40,7 @@ var SftpUpload = require('sftp-upload'),
     sftp.on('error', function(err) {
 		var errmsg = 'There was an error pushing the file to the remote system, try uncommenting debug lines or view log.txt for more info.';
 		clipboardy.writeSync(errmsg);
-        throw err;
+        //throw err; //comment out. This triggers an error on MacOS because screenshots generate a ".Screen Shot" file before the final "Screen Shot" file is saved to the system. Need to find a method to ignore dot files. 
     })
     .on('uploading', function(progress) {
         console.log('Uploading', progress.file);
