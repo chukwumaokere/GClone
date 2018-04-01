@@ -4,8 +4,8 @@ A gyazo screenshot function clone program that allows you to take a screenshot a
 [clipboardy](https://www.npmjs.com/package/clipboardy), [sftp-upload](https://www.npmjs.com/package/sftp-upload)
 ## Set up SSH Key to upload (Mandatory) 
 Follow this guide if you need assistance: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
-## Edit 
-config.js
+## Set up config 
+Run `node setup e` or use text editor to edit `config.js`
 ## Run 
 `node gclone.js` or use something like `pm2` (http://pm2.keymetrics.io/), since the app needs to be constantly monitoring the directory, and it'll reboot if it fails.
 ## Test 

@@ -25,6 +25,9 @@
   "homepage": "https://github.com/chukwumaokere/GClone#readme",
   "dependencies": {
     "clipboardy": "^1.2.3",
+    "commander": "^2.15.1",
+    "fs": "0.0.1-security",
+    "inquirer": "^5.2.0",
     "sftp-upload": "^1.0.0"
   }
 }
