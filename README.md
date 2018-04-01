@@ -22,5 +22,7 @@ Turn into .exe for windows? not necessary but can be done.
 ~~Apparently ssh key needs to be accepted before hand on the local server before successfully sending images. Need a workaround for this. Need to come up with solution for Windows OS. Only partially works with Cygwin~~ __(Removed)__  
 Need to make sure most recent upload gets copied, not thumb.db  
 Fix upload process with watch event listener.  
+Fix to only upload as many files as are new. And ignore files that already exist. Need to upload files, not a whole directory.  
+Fix error on MacOS because screenshots generate a ".Screen Shot" file before the final "Screen Shot" file is saved to the system. Need to find a method to ignore dot files.
 
 ## If you're using the .old files for legacy support, make sure to rename them and remove the .old. Only use the .old files with each other. i.e., config.js.old goes with gclone.js.old. Don't mix the new and old together, you might have a bad time. 
