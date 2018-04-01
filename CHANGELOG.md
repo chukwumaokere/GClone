@@ -1,3 +1,7 @@
+# v0.0.9.1 (March 31, 2018)
+Added script for setup  
+Added success message for setup  
+
 # v0.0.9 (March 31, 2018)
 Added setup file for command line set up   
 

@@ -66,6 +66,8 @@ exports.rsa_key_path = '${answers.rsa_key_path}'//path to your local id_rsa file
 exports.sspath = '${answers.sspath}'; //The path to the 'Screenshots/' directory after SSH. Please make it an absolute path, not relative. Keep the trailing slash /`, function(err){
 		if (err){
 			console.log(err);
+		}else{
+			console.log("Setup successfully finished! Please run 'npm start' 'node gclone' or use your preferred app monitoring program to start 'gclone.js'");
 		}
 	})
 	) 
