@@ -1,10 +1,13 @@
 # GClone 
-A gyazo screenshot function clone program that allows you to take a screenshot and upload the screenshot to a remote server that you choose. You can even monitor a directory and it will automatically upload files to a remote point when a new file is added to the directory. It uses the screenshot feature of your native OS or third party.  
-I'd recommend [Screenpress](https://www.screenpresso.com/download/) for PC. Then since Screenpresso always creates a `Screenpresso` directory in the path you choose as the default working folder, right click the icon in the tray, export your current settings, then edit the XML and change this setting to the directory you want
+A gyazo screenshot function clone program that allows you to take a screenshot and upload the screenshot to a remote server that you choose. You can even monitor a directory and it will automatically upload files to a remote point when a new file is added to the directory. It uses the screenshot feature of your native OS or third party.   
+
+I'd recommend [Screenpresso](https://www.screenpresso.com/download/) for PC. Then since Screenpresso always creates a `Screenpresso` directory in the path you choose as the default working folder, right click the icon in the tray, export your current settings, then edit the XML and change this setting to the directory you want
 ```ini
 <TempFolderScreenShots>C:\Users\youruser\Pictures\Screenshots</TempFolderScreenShots>
 ```
-This will override the program trying to create a new directory, if you don't want the behavior. Then import the settings file (.xml) back into Screenpresso, press OK and boom. You're done. Use your hotkey to activate Screenpresso, select the region you want to screenshot and it'll automaticaly upload
+This will override the program trying to create a new directory, if you don't want the behavior. Then import the settings file (.xml) back into Screenpresso, press OK and boom. You're done. Use your hotkey to activate Screenpresso, select the region you want to screenshot and it'll automaticaly upload.  
+
+This way the behavior will be exactly like MacOS/UNIX Systems
 
 ## Dependencies 
 [clipboardy](https://www.npmjs.com/package/clipboardy), [sftp-upload](https://www.npmjs.com/package/sftp-upload)
